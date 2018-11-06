@@ -13,7 +13,6 @@ for i in range(1, 92):
         # real
         print("Reading file %s" % real_filename)
         data = pd.read_json(real_filename, lines=True)
-        print(data, 'data')
         json_data = {
             'text': data['text'].values[0],
             'label': 'Real'
