@@ -21,7 +21,7 @@ class Prepare:
 in_json = []
 
 # read file
-with open('json_data.json', 'r') as f:
+with open('dataset/json_data.json', 'r') as f:
     data = json.load(f)
 
 # map through the data and tokenize
@@ -35,7 +35,7 @@ for datum in data:
     in_json.append(json_data)
 
 # save file to json
-with open('json_data1.json', 'w') as f:
+with open('prepared_dataset/json_data.json', 'w') as f:
     temp = json.dumps(in_json)
     f.write(temp)
 
@@ -44,8 +44,8 @@ uniqueWordsArr = []
 uniqueWordsMap = {}
 number = 0
 
-# form number to word dictionary
-with open('json_data1.json', 'r') as f:
+# form number to unique word dictionary
+with open('prepared_dataset/json_data.json', 'r') as f:
     data = json.load(f)
 
 for datum in data:
@@ -55,6 +55,6 @@ for datum in data:
             uniqueWordsArr.append(i)
             uniqueWordsMap[number] = i
 
-with open('numToWord.json', 'w') as f:
+with open('prepared_dataset/numToWord.json', 'w') as f:
     temp = json.dumps(uniqueWordsMap)
     f.write(temp)
