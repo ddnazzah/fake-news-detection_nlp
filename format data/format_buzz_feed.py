@@ -7,8 +7,8 @@ in_json = []
 for i in range(1, 92):
     # read a single dataset file
     try:
-        real_filename = "dataset/buzzfeed/BuzzFeed_Real_%s-Webpage.json" % i
-        fake_filename = "dataset/buzzfeed/BuzzFeed_Fake_%s-Webpage.json" % i
+        real_filename = "../dataset/buzzfeed/BuzzFeed_Real_%s-Webpage.json" % i
+        fake_filename = "../dataset/buzzfeed/BuzzFeed_Fake_%s-Webpage.json" % i
 
         # real
         print("Reading file %s" % real_filename)
@@ -47,7 +47,7 @@ for i in range(1, 92):
 print("Done!!!!!!!!!!!")
 # merge dataset
 dataset = pd.concat(dataset)
-dataset.to_pickle("dataset.pkl")
+dataset.to_pickle("../dataset.pkl")
 
 # save json data file
 with open('json_data.json', 'w') as f:
