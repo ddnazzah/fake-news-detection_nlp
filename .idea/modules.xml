@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fake News.iml" filepath="$PROJECT_DIR$/.idea/Fake News.iml" />
+      <module fileurl="file://E:/codeForMe/.idea/codeForMe.iml" filepath="E:/codeForMe/.idea/codeForMe.iml" />
+    </modules>
+  </component>
+</project>
